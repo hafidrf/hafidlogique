@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
+    id("kotlin-kapt")
+}
+
+android {
+    compileSdk 33
+    namespace 'com.hafidrf.app'
+    defaultConfig {
+        applicationId "com.hafidrf.app"
+        minSdk 22
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", 'BASE_URL', "\"https://dummyapi.io/data/v1/\""
+        }
+        debug {
+            buildConfigField "String", 'BASE_URL', "\"https://dummyapi.io/data/v1/\""
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    viewBinding{
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+def lifeCycleVer = '2.5.1'
+def retrofitVer = '2.9.0'
+def navAndroidXVer = '2.5.3'
+def moshiKotlinVersion = '1.12.0'
+def okhttp3Version = '4.9.3'
+def koinVersion = '3.2.2'
+def viewBindingDelegate = '1.5.3'
+def room_version = "2.4.3"
+def fragment_version = "1.5.4"
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0@aar'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:${retrofitVer}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitVer}"
+    implementation "com.squareup.retrofit2:converter-moshi:${retrofitVer}"
+    implementation "com.squareup.moshi:moshi-kotlin:${moshiKotlinVersion}"
+    implementation "com.squareup.okhttp3:okhttp:${okhttp3Version}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${okhttp3Version}"
+
+
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:${lifeCycleVer}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${lifeCycleVer}"
+    implementation "androidx.navigation:navigation-fragment-ktx:${navAndroidXVer}"
+    implementation "androidx.navigation:navigation-ui-ktx:${navAndroidXVer}"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    //di
+    implementation "io.insert-koin:koin-android:${koinVersion}"
+    implementation "io.insert-koin:koin-core:$koinVersion"
+    implementation "com.github.kirich1409:viewbindingpropertydelegate-noreflection:${viewBindingDelegate}"
+
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "io.insert-koin:koin-test-junit4:${koinVersion}"
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.0'
+    androidTestImplementation 'androidx.test:runner:1.5.1'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation "io.insert-koin:koin-test:${koinVersion}"
+    androidTestImplementation "org.mockito:mockito-android:2.22.0"
+    testImplementation "io.insert-koin:koin-test:${koinVersion}"
+    testImplementation "org.mockito:mockito-inline:4.2.0"
+    testImplementation "androidx.test:core:1.5.0"
+    androidTestImplementation "androidx.arch.core:core-testing:2.1.0"
+    debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+
+
+
+    // additional for async testing
+    testImplementation 'com.google.truth:truth:1.1.3'
+    androidTestImplementation "com.google.truth:truth:1.1.3"
+}

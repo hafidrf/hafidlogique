@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hafid Logique</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_user">User</string>
+    <string name="title_post">Post</string>
+    <string name="title_favorite">Favorite</string>
+
+    <string name="underline_text"><![CDATA[<u>%1$s</u>.]]></string>
+    <string name="message_not_found">Data tidak dapat ditemukan</string>
+</resources>
