@@ -1,5 +1,5 @@
 # About App
-This App Using API https://newsapi.org 
+This App Using API https://dummyapi.io
 
 ## Feature
 - Showing User List
