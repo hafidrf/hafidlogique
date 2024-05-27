@@ -29,6 +29,8 @@ This App Using API https://newsapi.org
 | Assist Local DB      | Room         | https://developer.android.com/jetpack/androidx/releases/room           |
 
 ## Screenshot
+<img src="https://github.com/hafidrf/hafidlogique/blob/master/1.app.jpg?raw=true" alt="User" width="400" />
+
 ![Capture](https://github.com/hafidrf/hafidlogique/blob/master/1.app.jpg?raw=true)
 ![Capture](https://github.com/hafidrf/hafidlogique/blob/master/2.app.jpg?raw=true)
 ![Capture](https://github.com/hafidrf/hafidlogique/blob/master/3.app.jpg?raw=true)
