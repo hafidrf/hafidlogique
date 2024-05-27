@@ -26,7 +26,7 @@ This App Using API https://newsapi.org
 | Loading UI           | Shimmer      | https://github.com/facebook/shimmer-android |
 | Image Load           | Glide        | https://github.com/bumptech/glide           |
 | Dependency Injection            | Koin         | https://insert-koin.io/           |
-| Dependency Injection            | Koin         | https://insert-koin.io/           |
 | Assist Local DB      | Room         | https://developer.android.com/jetpack/androidx/releases/room           |
 
 ## Screenshot
+![Capture](https://github.com/hafidrf/hafidlogique/blob/master/1.app.jpg?raw=true)
