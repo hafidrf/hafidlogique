@@ -30,10 +30,9 @@ This App Using API https://newsapi.org
 
 ## Screenshot
 <img src="https://github.com/hafidrf/hafidlogique/blob/master/1.app.jpg?raw=true" alt="User" width="400" />
+<img src="https://github.com/hafidrf/hafidlogique/blob/master/2.app.jpg?raw=true" alt="Post" width="400" />
+<img src="https://github.com/hafidrf/hafidlogique/blob/master/3.app.jpg?raw=true" alt="Post" width="400" />
+<img src="https://github.com/hafidrf/hafidlogique/blob/master/4.app.jpg?raw=true" alt="Post" width="400" />
+<img src="https://github.com/hafidrf/hafidlogique/blob/master/5.app.jpg?raw=true" alt="Post" width="400" />
+<img src="https://github.com/hafidrf/hafidlogique/blob/master/6.app.jpg?raw=true" alt="Fav" width="400" />
 
-![Capture](https://github.com/hafidrf/hafidlogique/blob/master/1.app.jpg?raw=true)
-![Capture](https://github.com/hafidrf/hafidlogique/blob/master/2.app.jpg?raw=true)
-![Capture](https://github.com/hafidrf/hafidlogique/blob/master/3.app.jpg?raw=true)
-![Capture](https://github.com/hafidrf/hafidlogique/blob/master/4.app.jpg?raw=true)
-![Capture](https://github.com/hafidrf/hafidlogique/blob/master/5.app.jpg?raw=true)
-![Capture](https://github.com/hafidrf/hafidlogique/blob/master/6.app.jpg?raw=true)
